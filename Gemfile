@@ -10,7 +10,7 @@ gem 'pg'
 group :production do
   gem 'unicorn'
   gem 'foreman'
-  gem 'therubyracer' #only required for 0.70.x or later
+  gem 'therubyracer', '0.10.2' #only required for 0.70.x or later
 end
 # Gems used only for assets and not required
 # in production environments by default.
@@ -57,17 +57,17 @@ end
 
 # To use debugger
 # gem 'debugger'
-gem 'spree', '1.2.2'
+gem 'spree', :git => 'git://github.com/spree/spree.git', :branch => '1-3-stable'
 gem 'spree_usa_epay'
 gem 'spree_skrill'
-gem 'spree_auth_devise', :git => 'git://github.com/spree/spree_auth_devise'
+gem 'spree_auth_devise', :git => 'git://github.com/spree/spree_auth_devise', :branch => 'edge'
 gem 'spree_i18n', :git => 'git://github.com/jgamsan/spree_i18n.git'
 gem "spree_paypal_express", :git => "git://github.com/spree/spree_paypal_express.git"
-gem "spree_addings_for_rodaben", :git => "git://github.com/jgamsan/spree_addings_for_rodaben.git"
-gem "spree_load_tires_for_rodaben", :git => "git://github.com/jgamsan/spree_load_tires_for_rodaben.git"
-gem "spree_search_rodaben", :git => "git://github.com/jgamsan/spree_search_rodaben.git"
-gem "spree_cycle", :git => "git://github.com/jgamsan/spree_cycle.git"
+gem "spree_addings_for_rodaben", :git => "git://github.com/jgamsan/spree_addings_for_rodaben.git", :branch => 'stable-1-3'
+gem "spree_load_tires_for_rodaben", :git => "git://github.com/jgamsan/spree_load_tires_for_rodaben.git", :branch => 'stable-1-3'
+gem "spree_search_rodaben", :git => "git://github.com/jgamsan/spree_search_rodaben.git", :branch => 'stable-1-3'
+gem "spree_cycle", :git => "git://github.com/jgamsan/spree_cycle.git", :branch => 'stable-1-3'
 gem "spree_contact_us", :git => "git://github.com/jgamsan/spree_contact_us.git"
-gem "spree_suppliers", :git => "git://github.com/jgamsan/spree_suppliers.git"
+gem "spree_suppliers", :git => "git://github.com/jgamsan/spree_suppliers.git", :branch => 'stable-1-3'
 gem "spree_workshop", :git => "git://github.com/jgamsan/spree_workshop.git"
-gem "spree_news", :git => "git://github.com/jgamsan/spree_news.git"
+gem "spree_news", :git => "git://github.com/jgamsan/spree_news.git", :branch => 'stable-1-3'

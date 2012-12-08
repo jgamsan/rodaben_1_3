@@ -1,8 +1,8 @@
 # This migration comes from spree (originally 20100105132138)
 class ShipmentIdForInventoryUnits < ActiveRecord::Migration
   def up
-    add_column :inventory_units, :shipment_id, :integer
-    add_index :inventory_units, :shipment_id
+#    add_column :inventory_units, :shipment_id, :integer
+#    add_index :inventory_units, :shipment_id
 
     # migrate legacy shipments
     Spree::Shipment.table_name = 'shipments'

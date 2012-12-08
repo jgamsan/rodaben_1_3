@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121119105560) do
+ActiveRecord::Schema.define(:version => 20121124203911) do
 
   create_table "spree_activators", :force => true do |t|
     t.string   "description"
@@ -172,6 +172,7 @@ ActiveRecord::Schema.define(:version => 20121119105560) do
     t.decimal  "price",      :precision => 8, :scale => 2, :null => false
     t.datetime "created_at",                               :null => false
     t.datetime "updated_at",                               :null => false
+    t.string   "currency"
   end
 
   add_index "spree_line_items", ["order_id"], :name => "index_spree_line_items_on_order_id"
@@ -241,6 +242,7 @@ ActiveRecord::Schema.define(:version => 20121119105560) do
     t.string   "email"
     t.text     "special_instructions"
     t.integer  "workshop_id"
+    t.string   "currency"
   end
 
   add_index "spree_orders", ["number"], :name => "index_spree_orders_on_number"
@@ -301,6 +303,12 @@ ActiveRecord::Schema.define(:version => 20121119105560) do
   end
 
   add_index "spree_preferences", ["key"], :name => "index_spree_preferences_on_key", :unique => true
+
+  create_table "spree_prices", :force => true do |t|
+    t.integer "variant_id",                               :null => false
+    t.decimal "amount",     :precision => 8, :scale => 2
+    t.string  "currency"
+  end
 
   create_table "spree_product_option_types", :force => true do |t|
     t.integer  "position"
@@ -529,9 +537,10 @@ ActiveRecord::Schema.define(:version => 20121119105560) do
   end
 
   create_table "spree_taxonomies", :force => true do |t|
-    t.string   "name",       :null => false
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.string   "name",                      :null => false
+    t.datetime "created_at",                :null => false
+    t.datetime "updated_at",                :null => false
+    t.integer  "position",   :default => 0
   end
 
   create_table "spree_taxons", :force => true do |t|
@@ -641,7 +650,6 @@ ActiveRecord::Schema.define(:version => 20121119105560) do
 
   create_table "spree_variants", :force => true do |t|
     t.string   "sku",                                              :default => "",    :null => false
-    t.decimal  "price",              :precision => 8, :scale => 2,                    :null => false
     t.decimal  "weight",             :precision => 8, :scale => 2
     t.decimal  "height",             :precision => 8, :scale => 2
     t.decimal  "width",              :precision => 8, :scale => 2
@@ -662,6 +670,7 @@ ActiveRecord::Schema.define(:version => 20121119105560) do
     t.boolean  "tire_rf"
     t.integer  "lock_version",                                     :default => 0
     t.boolean  "on_demand",                                        :default => false
+    t.string   "cost_currency"
   end
 
   add_index "spree_variants", ["product_id"], :name => "index_spree_variants_on_product_id"
