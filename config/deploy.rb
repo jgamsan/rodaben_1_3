@@ -1,7 +1,7 @@
-set :application, "neumaticos"
+set :application, "rodaben"
 set :domain, "mail.galiclick.com"
 set :user, "galiclick"
-set :repository, "git@github.com:jgamsan/work_rodaben.git"
+set :repository, "git@github.com:jgamsan/rodaben_1_3.git"
 set :scm, :git
 set :keep_releases, 2
 set :rvm_ruby_string, ENV['GEM_HOME'].gsub(/.*\//,"")
@@ -26,7 +26,7 @@ end
 
 namespace :customs do
   task :symlink, :roles => :app do
-    run "ln -nfs /home/galiclick/public_html/rodaben/shared/system/spree #{release_path}/public"
+    run "ln -nfs #{shared_path}/system/spree #{release_path}/public"
     run "ln -nfs #{shared_path}/system/products #{release_path}/vendor"
   end
 end
