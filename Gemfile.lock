@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/jgamsan/spree_addings_for_rodaben.git
-  revision: 084c24f8661946b1df52df5ec5aa8ff19c8b9966
+  revision: 803e2a2777cb65448974caca0ffadb6e2fb0daa5
   branch: stable-1-3
   specs:
     spree_addings_for_rodaben (1.1.2)
@@ -31,8 +31,7 @@ GIT
 
 GIT
   remote: git://github.com/jgamsan/spree_load_tires_for_rodaben.git
-  revision: b226cc3588e4fab53d252314fc9afaccecd7cd3f
-  branch: stable-1-3
+  revision: 27d7c8047be7c19631506ff8d1788329b67f51b2
   specs:
     spree_load_tires_for_rodaben (1.1.2)
       mechanize
@@ -49,7 +48,7 @@ GIT
 
 GIT
   remote: git://github.com/jgamsan/spree_search_rodaben.git
-  revision: 7e285463c8a05f4dcde4553804750fd3fb77e0c0
+  revision: b645a908c4c99d03ba20d8c667bd1f68d4c4aad4
   branch: stable-1-3
   specs:
     spree_search_rodaben (1.1.1)
@@ -72,7 +71,7 @@ GIT
 
 GIT
   remote: git://github.com/spree/spree.git
-  revision: 75db6c1b1f82c9707e8900de46c2ddf1b253f338
+  revision: bfcb5b29b3e29c3d451b14ab39e2b502ea93f6a4
   branch: 1-3-stable
   specs:
     spree (1.3.0.rc1)
@@ -413,7 +412,7 @@ GEM
     treetop (1.4.12)
       polyglot
       polyglot (>= 0.3.1)
-    turbo-sprockets-rails3 (0.3.3)
+    turbo-sprockets-rails3 (0.3.4)
       railties (> 3.2.8, < 4.0.0)
       sprockets (>= 2.0.0)
     tzinfo (0.3.35)
@@ -424,7 +423,7 @@ GEM
       unf_ext
     unf_ext (0.0.5)
     unicode-display_width (0.1.1)
-    unicorn (4.4.0)
+    unicorn (4.5.0)
       kgio (~> 2.6)
       rack
       raindrops (~> 0.7)
@@ -443,7 +442,8 @@ GEM
     whenever (0.7.3)
       activesupport (>= 2.3.4)
       chronic (~> 0.6.3)
-    wirb (0.5.0)
+    wirb (1.0.1)
+      paint
     zucker (12.1)
 
 PLATFORMS

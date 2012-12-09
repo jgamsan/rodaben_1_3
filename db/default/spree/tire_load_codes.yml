@@ -1,0 +1,343 @@
+id_1:
+  name: 20
+  weight: 80
+
+id_2:
+  name: 22
+  weight: 85
+
+id_3:
+  name: 24
+  weight: 85
+
+id_4:
+  name: 26
+  weight: 90
+
+id_5:
+  name: 28
+  weight: 100
+
+id_6:
+  name: 30
+  weight: 106
+
+id_7:
+  name: 31
+  weight: 109
+
+id_8:
+  name: 33
+  weight: 115
+
+id_9:
+  name: 35
+  weight: 121
+
+id_10:
+  name: 37
+  weight: 128
+
+id_11:
+  name: 40
+  weight: 136
+
+id_12:
+  name: 41
+  weight: 145
+
+id_13:
+  name: 42
+  weight: 150
+
+id_14:
+  name: 44
+  weight: 160
+
+id_15:
+  name: 46
+  weight: 170
+
+id_16:
+  name: 47
+  weight: 175
+
+id_17:
+  name: 48
+  weight: 180
+
+id_18:
+  name: 50
+  weight: 190
+
+id_19:
+  name: 51
+  weight: 195
+
+id_20:
+  name: 52
+  weight: 200
+
+id_21:
+  name: 53
+  weight: 206
+
+id_22:
+  name: 54
+  weight: 212
+
+id_23:
+  name: 55
+  weight: 218
+
+id_24:
+  name: 58
+  weight: 236
+
+id_25:
+  name: 59
+  weight: 243
+
+id_26:
+  name: 60
+  weight: 250
+
+id_27:
+  name: 61
+  weight: 257
+
+id_28:
+  name: 62
+  weight: 265
+
+id_29:
+  name: 63
+  weight: 272
+
+id_30:
+  name: 64
+  weight: 280
+
+id_31:
+  name: 65
+  weight: 290
+
+id_32:
+  name: 66
+  weight: 300
+
+id_33:
+  name: 67
+  weight: 307
+
+id_34:
+  name: 68
+  weight: 315
+
+id_35:
+  name: 69
+  weight: 325
+
+id_36:
+  name: 70
+  weight: 335
+
+id_37:
+  name: 71
+  weight: 345
+
+id_38:
+  name: 72
+  weight: 355
+
+id_39:
+  name: 73
+  weight: 365
+
+id_40:
+  name: 74
+  weight: 375
+
+id_41:
+  name: 75
+  weight: 387
+
+id_42:
+  name: 76
+  weight: 400
+
+id_43:
+  name: 77
+  weight: 412
+
+id_44:
+  name: 78
+  weight: 425
+
+id_45:
+  name: 79
+  weight: 437
+
+id_46:
+  name: 80
+  weight: 450
+
+id_47:
+  name: 81
+  weight: 462
+
+id_48:
+  name: 82
+  weight: 475
+
+id_49:
+  name: 83
+  weight: 487
+
+id_50:
+  name: 84
+  weight: 500
+
+id_51:
+  name: 85
+  weight: 515
+
+id_52:
+  name: 86
+  weight: 530
+
+id_53:
+  name: 87
+  weight: 545
+
+id_54:
+  name: 88
+  weight: 560
+
+id_55:
+  name: 89
+  weight: 580
+
+id_56:
+  name: 90
+  weight: 600
+
+id_57:
+  name: 91
+  weight: 615
+
+id_58:
+  name: 92
+  weight: 630
+
+id_59:
+  name: 93
+  weight: 650
+
+id_60:
+  name: 94
+  weight: 670
+
+id_61:
+  name: 95
+  weight: 690
+
+id_62:
+  name: 96
+  weight: 710
+
+id_63:
+  name: 97
+  weight: 730
+
+id_64:
+  name: 98
+  weight: 750
+
+id_65:
+  name: 99
+  weight: 775
+
+id_66:
+  name: 100
+  weight: 800
+
+id_67:
+  name: 101
+  weight: 825
+
+id_68:
+  name: 102
+  weight: 850
+
+id_69:
+  name: 103
+  weight: 875
+
+id_70:
+  name: 104
+  weight: 900
+
+id_71:
+  name: 105
+  weight: 925
+
+id_72:
+  name: 106
+  weight: 950
+
+id_73:
+  name: 107
+  weight: 975
+
+id_74:
+  name: 108
+  weight: 1000
+
+id_75:
+  name: 109
+  weight: 1030
+
+id_76:
+  name: 110
+  weight: 1060
+
+id_77:
+  name: 111
+  weight: 1090
+
+id_78:
+  name: 112
+  weight: 1120
+
+id_79:
+  name: 113
+  weight: 1150
+
+id_80:
+  name: 114
+  weight: 1180
+
+id_81:
+  name: 115
+  weight: 1215
+
+id_82:
+  name: 116
+  weight: 1250
+
+id_83:
+  name: 117
+  weight: 1285
+
+id_84:
+  name: 118
+  weight: 1320
+
+id_85:
+  name: 119
+  weight: 1360
+
+id_86:
+  name: 120
+  weight: 1400

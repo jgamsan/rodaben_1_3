@@ -64,7 +64,7 @@ gem 'spree_auth_devise', :git => 'git://github.com/spree/spree_auth_devise', :br
 gem 'spree_i18n', :git => 'git://github.com/jgamsan/spree_i18n.git'
 gem "spree_paypal_express", :git => "git://github.com/spree/spree_paypal_express.git"
 gem "spree_addings_for_rodaben", :git => "git://github.com/jgamsan/spree_addings_for_rodaben.git", :branch => 'stable-1-3'
-gem "spree_load_tires_for_rodaben", :git => "git://github.com/jgamsan/spree_load_tires_for_rodaben.git", :branch => 'stable-1-3'
+gem "spree_load_tires_for_rodaben", :git => "git://github.com/jgamsan/spree_load_tires_for_rodaben.git"
 gem "spree_search_rodaben", :git => "git://github.com/jgamsan/spree_search_rodaben.git", :branch => 'stable-1-3'
 gem "spree_cycle", :git => "git://github.com/jgamsan/spree_cycle.git", :branch => 'stable-1-3'
 gem "spree_contact_us", :git => "git://github.com/jgamsan/spree_contact_us.git"
