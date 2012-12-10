@@ -1,4 +1,4 @@
-set :application, "rodaben"
+set :application, "neumaticos"
 set :domain, "mail.galiclick.com"
 set :user, "galiclick"
 set :repository, "git@github.com:jgamsan/rodaben_1_3.git"
