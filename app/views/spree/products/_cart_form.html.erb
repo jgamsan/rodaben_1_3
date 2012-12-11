@@ -30,8 +30,7 @@
       <div class="span6" data-hook="product_price">
         <div id="product-price">
           <h2>
-            <strong><%= t(:price) %><%= number_to_currency @product.price %></strong>
-            <small>Ex Tax: $500.00</small><br /><br />
+            <strong><%= number_to_currency @product.price %></strong>
           </h2>
         </div>
       </div>
@@ -47,13 +46,6 @@
             <%= content_tag('strong', t(:out_of_stock)) %>
           <% end %>
         </div>
-      </div>
-      <div class="span1">
-      - OR -
-      </div>
-      <div class="span2">
-        <p><a href="#">Add to Wish List</a></p>
-        <p><a href="compare.html">Add to Compare</a></p>
       </div>
     <% end %>
   </div>
