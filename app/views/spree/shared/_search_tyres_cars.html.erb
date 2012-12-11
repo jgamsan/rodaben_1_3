@@ -18,18 +18,15 @@
     <%= hidden_field_tag "vehicle[]", vehiculo %>
   <% end %>
   <%= select_tag :tire_season, options_for_select([[t(:tire_season), '']] +
-                    Spree::Variant::SEASON_OPTIONS), :class => "span2 styled-select" %>
+                    SEASON_OPTIONS), :class => "span2 styled-select" %>
+  <%= select_tag :tire_rf, options_for_select([[t(:tire_rf), '']] +
+                    TUBE_OPTIONS), :class => "span2 styled-select" %>
   <div class="styled-label">
     <%= label_tag nil, nil, :class => "checkbox inline" do %>
       <%= check_box_tag :tire_gr, t(:tire_gr) %>
       <%= t(:tire_gr) %>
     <% end -%>
-    <%= label_tag nil, nil, :class => "checkbox inline" do %>
-      <%= check_box_tag :tire_rf, t(:tire_rf) %>
-      <%= t(:tire_rf) %>
-    <% end -%>
   </div>
-  <%#= submit_tag , :name => nil, :class => "btn btn-primary" %>
   <button type="submit" class="btn btn-primary">
     <i class="icon-search icon-white"></i> <%= t(:search) %>
   </button>

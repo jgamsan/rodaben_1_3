@@ -15,9 +15,9 @@
                   Spree::TireLoadCode.order("id asc").map {|t| [t.name, t.id]},
                   @load_code ? @load_code.id : params[:tire_load_code_id]), :class => "span1 styled-select" %>
   <%= select_tag :tire_position, options_for_select([[t(:tire_position), '']] +
-                  Spree::Variant::POSITION_OPTIONS), :class => "span2 styled-select" %>
+                  POSITION_OPTIONS), :class => "span2 styled-select" %>
   <%= select_tag :tire_rf, options_for_select([[t(:tire_rf), '']] +
-                  Spree::Variant::TUBE_OPTIONS), :class => "span1 styled-select" %>
+                  TUBE_OPTIONS), :class => "span1 styled-select" %>
   <%= select_tag :marca, options_for_select([[t(:brand), '']] +
                   Spree::Taxon.by_moto.map {|t| [t.name, t.id]},
                   @taxon ? @taxon.id : params[:marca]), :class => "span2 styled-select" %>

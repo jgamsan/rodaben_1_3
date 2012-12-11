@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121207184602) do
+ActiveRecord::Schema.define(:version => 20121211222406) do
 
   create_table "spree_activators", :force => true do |t|
     t.string   "description"
@@ -572,6 +572,13 @@ ActiveRecord::Schema.define(:version => 20121207184602) do
     t.boolean  "is_mm",                                    :default => true
   end
 
+  create_table "spree_tire_load_codes", :force => true do |t|
+    t.string   "name"
+    t.decimal  "weight",     :precision => 6, :scale => 2, :default => 0.0
+    t.datetime "created_at",                                                :null => false
+    t.datetime "updated_at",                                                :null => false
+  end
+
   create_table "spree_tire_serials", :force => true do |t|
     t.string   "name"
     t.datetime "created_at",                   :null => false
@@ -667,12 +674,12 @@ ActiveRecord::Schema.define(:version => 20121207184602) do
     t.integer  "tire_season"
     t.decimal  "price_in_offert",    :precision => 8, :scale => 2, :default => 0.0
     t.boolean  "tire_gr"
-    t.boolean  "tire_rf"
     t.integer  "lock_version",                                     :default => 0
     t.boolean  "on_demand",                                        :default => false
     t.string   "cost_currency"
     t.integer  "tire_load_code_id"
     t.integer  "tire_position"
+    t.integer  "tire_rf",                                          :default => 1
   end
 
   add_index "spree_variants", ["product_id"], :name => "index_spree_variants_on_product_id"
@@ -706,13 +713,6 @@ ActiveRecord::Schema.define(:version => 20121207184602) do
     t.datetime "updated_at",                            :null => false
     t.boolean  "default_tax",        :default => false
     t.integer  "zone_members_count", :default => 0
-  end
-
-  create_table "tire_load_codes", :force => true do |t|
-    t.string   "name"
-    t.decimal  "weight",     :precision => 6, :scale => 2, :default => 0.0
-    t.datetime "created_at",                                                :null => false
-    t.datetime "updated_at",                                                :null => false
   end
 
 end
