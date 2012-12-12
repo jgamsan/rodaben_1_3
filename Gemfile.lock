@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/jgamsan/spree_addings_for_rodaben.git
-  revision: 61eb230c0a359bc017895dd301b7ff9f84237df0
+  revision: c14cd56d4745a561b3cd20a86b6bfb9ed63d52c3
   branch: stable-1-3
   specs:
     spree_addings_for_rodaben (1.1.2)
@@ -48,7 +48,7 @@ GIT
 
 GIT
   remote: git://github.com/jgamsan/spree_search_rodaben.git
-  revision: ab840bb95eec7c906128be06a5e10999239d73a2
+  revision: dda0defa9990598ae395b93ced68f05b52e76840
   branch: stable-1-3
   specs:
     spree_search_rodaben (1.1.1)
@@ -71,7 +71,7 @@ GIT
 
 GIT
   remote: git://github.com/spree/spree.git
-  revision: b01240fbf70030278233bdd2369ae18560415311
+  revision: 55fe1f1f1a0a810a9a8b6cee3547aec5b9d3efea
   branch: 1-3-stable
   specs:
     spree (1.3.0.rc1)
