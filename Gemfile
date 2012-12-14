@@ -42,6 +42,7 @@ group :development do
   gem 'irbtools'
   gem 'bullet'
   gem 'letter_opener'
+  gem 'puma'
 end
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
