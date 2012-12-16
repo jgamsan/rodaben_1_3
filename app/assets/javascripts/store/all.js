@@ -41,3 +41,11 @@ $(function() {
     return false;
   });
 });
+
+$(document).ajaxStart(function(){
+  $("#progress").show();
+});
+
+$(document).ajaxStop(function(){
+  $("#progress").hide();
+});

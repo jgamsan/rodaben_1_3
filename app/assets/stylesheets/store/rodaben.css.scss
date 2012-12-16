@@ -55,14 +55,14 @@ html {
 }
 
 .social_contenido ul{
-    width: 100px;
-    height: 50px;
-    margin: 155px 45px;
-    list-style: none;
-    float: right;
+  width: 100px;
+  height: 50px;
+  margin: 155px 45px;
+  list-style: none;
+  float: right;
 }
 .social_contenido li a{
-    float: right;
+  float: right;
 }
 
 #social_twitter{
@@ -148,13 +148,13 @@ html {
 }
 
 #contenido{
-    margin: -60px 0;
-    width: 980px;
-    height: 800px;
-    background: url(../contenido.png) no-repeat;
-    float: left;
-    padding-left: 10px;
-    padding-top: 50px;
+  margin: -60px 0;
+  width: 980px;
+  height: 800px;
+  background: url(../contenido.png) no-repeat;
+  float: left;
+  padding-left: 10px;
+  padding-top: 50px;
 }
 
 #carrito{
@@ -390,3 +390,10 @@ table tfoot {
     }
   }
 }
+#progress{
+  display:none;
+  z-index: 1;
+  top: 400px;
+  left:600px;
+  position: fixed;
+  }
