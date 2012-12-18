@@ -22,7 +22,8 @@ html {
   margin: 0px 0;
   width: 980px;
   height: 280px;
-  background: url(../banner.jpg) no-repeat;
+  background: url(../banner.jpg);
+  background-repeat: no-repeat;
   float: left;
 }
 
