@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121211222406) do
+ActiveRecord::Schema.define(:version => 20121220083550) do
 
   create_table "spree_activators", :force => true do |t|
     t.string   "description"
@@ -243,6 +243,7 @@ ActiveRecord::Schema.define(:version => 20121211222406) do
     t.text     "special_instructions"
     t.integer  "workshop_id"
     t.string   "currency"
+    t.string   "last_ip_address"
   end
 
   add_index "spree_orders", ["number"], :name => "index_spree_orders_on_number"
@@ -564,6 +565,17 @@ ActiveRecord::Schema.define(:version => 20121211222406) do
   add_index "spree_taxons", ["permalink"], :name => "index_taxons_on_permalink"
   add_index "spree_taxons", ["taxonomy_id"], :name => "index_taxons_on_taxonomy_id"
 
+  create_table "spree_tire_green_taxes", :force => true do |t|
+    t.string   "cat"
+    t.string   "description"
+    t.decimal  "amount",      :precision => 8, :scale => 2,                    :null => false
+    t.string   "currency",                                  :default => "EUR"
+    t.datetime "created_at",                                                   :null => false
+    t.datetime "updated_at",                                                   :null => false
+    t.decimal  "weight_min",  :precision => 8, :scale => 2,                    :null => false
+    t.decimal  "weight_max",  :precision => 8, :scale => 2,                    :null => false
+  end
+
   create_table "spree_tire_innertubes", :force => true do |t|
     t.string   "name"
     t.datetime "created_at",                                                 :null => false
@@ -680,6 +692,7 @@ ActiveRecord::Schema.define(:version => 20121211222406) do
     t.integer  "tire_load_code_id"
     t.integer  "tire_position"
     t.integer  "tire_rf",                                          :default => 1
+    t.integer  "tire_green_tax_id"
   end
 
   add_index "spree_variants", ["product_id"], :name => "index_spree_variants_on_product_id"

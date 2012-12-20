@@ -58,7 +58,7 @@ end
 
 # To use debugger
 # gem 'debugger'
-gem 'spree', :git => 'git://github.com/spree/spree.git', :branch => '1-3-stable'
+gem 'spree', '1.3.0'
 gem 'spree_usa_epay'
 gem 'spree_skrill'
 gem 'spree_auth_devise', :git => 'git://github.com/spree/spree_auth_devise', :branch => 'edge'
@@ -72,3 +72,4 @@ gem "spree_contact_us", :git => "git://github.com/jgamsan/spree_contact_us.git"
 gem "spree_suppliers", :git => "git://github.com/jgamsan/spree_suppliers.git", :branch => 'stable-1-3'
 gem "spree_workshop", :git => "git://github.com/jgamsan/spree_workshop.git"
 gem "spree_news", :git => "git://github.com/jgamsan/spree_news.git", :branch => 'stable-1-3'
+gem "spree_green_tax", :git => "git://github.com/jgamsan/spree_green_tax.git"
