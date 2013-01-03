@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121220083550) do
+ActiveRecord::Schema.define(:version => 20130102075616) do
 
   create_table "spree_activators", :force => true do |t|
     t.string   "description"
@@ -565,7 +565,13 @@ ActiveRecord::Schema.define(:version => 20121220083550) do
   add_index "spree_taxons", ["permalink"], :name => "index_taxons_on_permalink"
   add_index "spree_taxons", ["taxonomy_id"], :name => "index_taxons_on_taxonomy_id"
 
-  create_table "spree_tire_green_taxes", :force => true do |t|
+  create_table "spree_tire_fuel_consumptions", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "spree_tire_green_rates", :force => true do |t|
     t.string   "cat"
     t.string   "description"
     t.decimal  "amount",      :precision => 8, :scale => 2,                    :null => false
@@ -599,6 +605,12 @@ ActiveRecord::Schema.define(:version => 20121220083550) do
   end
 
   create_table "spree_tire_speed_codes", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "spree_tire_wet_grips", :force => true do |t|
     t.string   "name"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
@@ -668,31 +680,35 @@ ActiveRecord::Schema.define(:version => 20121220083550) do
   add_index "spree_users", ["persistence_token"], :name => "index_users_on_persistence_token"
 
   create_table "spree_variants", :force => true do |t|
-    t.string   "sku",                                              :default => "",    :null => false
-    t.decimal  "weight",             :precision => 8, :scale => 2
-    t.decimal  "height",             :precision => 8, :scale => 2
-    t.decimal  "width",              :precision => 8, :scale => 2
-    t.decimal  "depth",              :precision => 8, :scale => 2
+    t.string   "sku",                                                    :default => "",    :null => false
+    t.decimal  "weight",                   :precision => 8, :scale => 2
+    t.decimal  "height",                   :precision => 8, :scale => 2
+    t.decimal  "width",                    :precision => 8, :scale => 2
+    t.decimal  "depth",                    :precision => 8, :scale => 2
     t.datetime "deleted_at"
-    t.boolean  "is_master",                                        :default => false
+    t.boolean  "is_master",                                              :default => false
     t.integer  "product_id"
-    t.integer  "count_on_hand",                                    :default => 0
-    t.decimal  "cost_price",         :precision => 8, :scale => 2
+    t.integer  "count_on_hand",                                          :default => 0
+    t.decimal  "cost_price",               :precision => 8, :scale => 2
     t.integer  "position"
     t.integer  "tire_width_id"
     t.integer  "tire_serial_id"
     t.integer  "tire_innertube_id"
     t.integer  "tire_speed_code_id"
     t.integer  "tire_season"
-    t.decimal  "price_in_offert",    :precision => 8, :scale => 2, :default => 0.0
+    t.decimal  "price_in_offert",          :precision => 8, :scale => 2, :default => 0.0
     t.boolean  "tire_gr"
-    t.integer  "lock_version",                                     :default => 0
-    t.boolean  "on_demand",                                        :default => false
+    t.integer  "lock_version",                                           :default => 0
+    t.boolean  "on_demand",                                              :default => false
     t.string   "cost_currency"
     t.integer  "tire_load_code_id"
     t.integer  "tire_position"
-    t.integer  "tire_rf",                                          :default => 1
-    t.integer  "tire_green_tax_id"
+    t.integer  "tire_rf",                                                :default => 1
+    t.integer  "tire_green_rate_id"
+    t.integer  "tire_fuel_consumption_id"
+    t.integer  "tire_wet_grip_id"
+    t.integer  "tire_rolling_noise_db"
+    t.integer  "tire_rolling_noise_wave"
   end
 
   add_index "spree_variants", ["product_id"], :name => "index_spree_variants_on_product_id"
