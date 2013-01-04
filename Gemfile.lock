@@ -30,7 +30,7 @@ GIT
 
 GIT
   remote: git://github.com/jgamsan/spree_i18n.git
-  revision: 4fb5f943634b9dfb73169b60ec714e0c30a855c2
+  revision: 006d15268976c066f2e95a13ab6dea922b70cbfa
   specs:
     spree_i18n (1.0.0)
       i18n (~> 0.5)
