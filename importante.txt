@@ -1,5 +1,10 @@
 rake db:load_file[spree/towns,/home/jose/RubymineProjects/rodaben/db/default/]
 
-cd pu*/rodaben/current && bundle exec rake RAILS_ENV=production RAILS_GROUPS=assets assets:precompile
-
 Spree::TireWidth.joins(:variants => {:product => :taxons}).where("spree_taxons.id = ?", 4).group("spree_tire_widths.id")
+
+Importante para  Produccion:
+ 1.- Generar una categoria Fiscal para los neumaticos de coche especificamente, a la hora de aplicar la Ecotasa, ya que los neumaticos de moto ya la llevan incorporada en el precio.
+ 2.- Añadir esa categoria fiscal a los neumaticos de coche cuando se lean a traves del robot de lectura.
+ 3.- Crear dos Categrias de Envio. Una para los neumaticos de Automovil que no lllevan gastos de envio y otra para los neumaticos de moto que si llevan gastos de envio para pedidos inferiores a 150€.
+ 4.- Por tanto a la hora de cargar los neumaticos, hay que asignarle las distintas categorias a cada uno de los tipos de neumaticos.
+ 5.- Tambien hay que añadir la ecotasa a cada uno de los neumaticos. A los de automoviles la B y a los de Motos la A.
