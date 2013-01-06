@@ -50,5 +50,5 @@ $(document).ajaxStop(function(){
   $("#progress").hide();
 });
 $(function() {
-  $('a#example').popover({trigger:'hover'});
+  $('a#example').popover({trigger:'hover', placement:'bottom', html:true});
 });
