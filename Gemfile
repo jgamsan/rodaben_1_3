@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.9'
+gem 'rails', '3.2.10'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -58,7 +58,7 @@ end
 
 # To use debugger
 # gem 'debugger'
-gem 'spree', '1.3.0'
+gem 'spree', '1.3.1'
 gem 'spree_usa_epay'
 gem 'spree_skrill'
 gem 'spree_auth_devise', :git => 'git://github.com/spree/spree_auth_devise', :branch => 'edge'
