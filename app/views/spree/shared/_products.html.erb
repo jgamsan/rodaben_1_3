@@ -28,7 +28,7 @@
             <h4><%= link_to truncate(product.name, :length => 50), product, :class => 'info', :itemprop => "name", :title => product.name %></h4>
             <div class="row">
               <div class="span2">
-                <%= link_to "#", "data-original-title" => "A Title", "data-content" => "#{render :partial => "spree/shared/eco_information", :locals => {:f => :product}}", :id => "example" do %>
+                <%= link_to "#", "data-original-title" => "#{product.name}", "data-content" => "#{eco_image(product)}", :id => "example" do %>
                   <h4 style="padding-top:4px;" ><%= product.calculate_tires %></h4>
                 <% end %>
                 <%= hidden_field_tag (product.has_variants? ? :quantity : "variants[#{product.master.id}]"), 1, :in => 1..product.on_hand %>
