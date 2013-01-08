@@ -31,16 +31,18 @@
                 <div class="row">
                   <div class="span2">
                     <h4 style="padding-top:4px;" ><%= product.calculate_tires %></h4>
-                    <%= hidden_field_tag (product.has_variants? ? :quantity : "variants[#{product.master.id}]"), 1, :in => 1..product.on_hand %>    
+                    <%= hidden_field_tag (product.has_variants? ? :quantity : "variants[#{product.master.id}]"), 1, :in => 1..product.on_hand %>
                   </div>
                   <div class="span1">
-                    <%= link_to_unless(product.taxons.first == 9, "#", "data-original-title" => "#{product.name}", "data-content" => "#{eco_image(product)}", :id => "example") do %>
-                      <%= image_tag "etiqueta.png" %>
-                      <%= product.master.tire_fuel_consumption.name %>
-                      <%= product.master.tire_wet_grip.name %>
-                      <%= product.master.tire_rolling_noise_wave %>
-                      <%= product.master.tire_rolling_noise_db %>
-                    <% end %>        
+                    <% unless product.is_moto? %>
+                      <%= link_to "#", "data-original-title" => "#{product.name}", "data-content" => "#{eco_image(product)}", :id => "example" do %>
+                        <%= image_tag "etiqueta.png" %>
+                        <%= product.master.tire_fuel_consumption.name %>
+                        <%= product.master.tire_wet_grip.name %>
+                        <%= product.master.tire_rolling_noise_wave %>
+                        <%= product.master.tire_rolling_noise_db %>
+                      <% end %>
+                    <% end -%>
                   </div>
                 </div>
               </div>
