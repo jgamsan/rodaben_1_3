@@ -1,6 +1,6 @@
 Spree::ProductsHelper.class_eval do
   def eco_image(f)
-    if f.taxons.first == 9
+    if f.is_moto? || f.master.tire_fuel_consumption_id.nil?
       image_tag "base_etiqueta.jpg"
     else
       fuel_options = Hash["A", "-14-55", "B", "-13-33", "C", "-13-11", "D", "-13+11", "E", "-13+33", "F", "-13+55", "G", "-13+77"]
