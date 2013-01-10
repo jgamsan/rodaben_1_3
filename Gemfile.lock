@@ -38,7 +38,7 @@ GIT
 
 GIT
   remote: git://github.com/jgamsan/spree_load_tires_for_rodaben.git
-  revision: 6a7f5d934407b0fa00da97b68cff123cc45b08f4
+  revision: 166f13bb2439343cbe0d1000464c93f4de4fc31f
   specs:
     spree_load_tires_for_rodaben (1.1.2)
       mechanize
@@ -149,6 +149,10 @@ GEM
       nokogiri (>= 1.4.4)
       uuidtools (~> 2.1)
     bcrypt-ruby (3.0.1)
+    better_errors (0.3.2)
+      coderay (>= 1.0.0)
+      erubis (>= 2.7.0)
+    binding_of_caller (0.6.8)
     bootstrap-sass (2.2.2.0)
       sass (~> 3.2)
     boson (1.2.4)
@@ -187,7 +191,7 @@ GEM
       railties (~> 3.1)
       warden (~> 1.1.1)
     devise-i18n (0.5.12)
-    domain_name (0.5.6)
+    domain_name (0.5.7)
       unf (~> 0.0.3)
     erubis (2.7.0)
     every_day_irb (1.4.0)
@@ -454,6 +458,8 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  better_errors
+  binding_of_caller
   bootstrap-sass
   bullet
   capistrano
