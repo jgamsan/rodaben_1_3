@@ -1,7 +1,4 @@
 Spree::ProductsHelper.class_eval do
-<<<<<<< HEAD
-
-=======
   def eco_image(f)
     if f.is_moto? || f.master.tire_fuel_consumption_id.nil?
       image_tag "base_etiqueta.jpg"
@@ -36,5 +33,4 @@ Spree::ProductsHelper.class_eval do
       image_tag "output.jpg"
     end
   end
->>>>>>> 04c2eee53a1363abfe7628d1a8cb370554fe5456
 end

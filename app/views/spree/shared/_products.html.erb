@@ -17,7 +17,7 @@
             <%= link_to small_image(product, :itemprop => "image"), product, :itemprop => 'url' %>
           </div>
           <div class="span1">
-            <h4><%= product.taxons.last.name %></h4>
+            <h6><%= product.taxons.last.name %></h6>
             <div class="row">
               <div class="span1">
                 <h4 style="color:red; padding-top:10px;"><%= product.price_in(current_currency).display_price %></h4>
@@ -25,7 +25,7 @@
             </div>
           </div>
           <div class="span6">
-            <h4><%= link_to truncate(product.name, :length => 50), product, :class => 'info', :itemprop => "name", :title => product.name %></h4>
+            <h4 style="text-align:right;"><%= link_to truncate(product.name, :length => 50), product, :class => 'info', :itemprop => "name", :title => product.name %></h4>
             <div class="row">
               <div class="span3">
                 <div class="row">
@@ -35,13 +35,13 @@
                   </div>
                   <div class="span1">
                     <% unless product.is_moto? %>
-                      <%= link_to "#", "data-original-title" => "#{product.name}", "data-content" => "#{eco_image(product)}", :id => "example" do %>
+                      <%#= link_to "#", "data-original-title" => "#{product.name}", "data-content" => "#{eco_image(product)}", :id => "example" do %>
                         <%= image_tag "etiqueta.png" %>
                         <%= product.master.tire_fuel_consumption.name %>
                         <%= product.master.tire_wet_grip.name %>
                         <%= product.master.tire_rolling_noise_wave %>
                         <%= product.master.tire_rolling_noise_db %>
-                      <% end %>
+                      <%# end %>
                     <% end -%>
                   </div>
                 </div>
