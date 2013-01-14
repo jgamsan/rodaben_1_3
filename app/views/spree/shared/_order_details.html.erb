@@ -45,18 +45,18 @@
 <hr />
 
 <table class="table table-bordered table-hover table-striped" data-hook="order_details">
-  <col width="20%" valign="middle" halign="center">
+  <col width="20%" valign="middle" align="center">
   <col width="50%" valign="middle">
-  <col width="10%" valign="middle" halign="center">
-  <col width="10%" valign="middle" halign="center">
-  <col width="10%" valign="middle" halign="center">
+  <col width="10%" valign="middle" align="center">
+  <col width="10%" valign="middle" align="center">
+  <col width="10%" valign="middle" align="center">
 
   <thead id="line-items" data-hook>
     <tr data-hook="order_details_line_items_headers">
-      <th colspan="2"><%= t(:item) %></th>
-      <th><%= t(:price) %></th>
-      <th><%= t(:qty) %></th>
-      <th><%= t(:total) %></th>
+      <th colspan="2" style="vertical-align:middle;text-align:center;"><%= t(:item) %></th>
+      <th style="vertical-align:middle;text-align:center;"><%= t(:price) %></th>
+      <th style="vertical-align:middle;text-align:center;"><%= t(:qty) %></th>
+      <th style="vertical-align:middle;text-align:center;"><%= t(:total) %></th>
     </tr>
   </thead>
 
@@ -70,21 +70,21 @@
             <%= link_to image_tag(item.variant.images.first.attachment.url(:small)), item.variant.product %>
           <% end %>
         </td>
-        <td data-hook="order_item_description">
+        <td data-hook="order_item_description" style="vertical-align:middle;text-align:center;">
           <h4><%= item.variant.product.name %></h4>
           <%= truncate(item.variant.product.description, :length => 100, :omission => "...") %>
           <%= "(" + item.variant.options_text + ")" unless item.variant.option_values.empty? %>
         </td>
-        <td data-hook="order_item_price"><h5><%= money item.price %></h5></td>
-        <td data-hook="order_item_qty"><h5><%= item.quantity %></h5></td>
-        <td data-hook="order_item_total"><h5><%= money(item.price * item.quantity) %></h5></td>
+        <td data-hook="order_item_price" style="vertical-align:middle;text-align:center;"><h5><%= money item.price %></h5></td>
+        <td data-hook="order_item_qty" style="vertical-align:middle;text-align:center;"><h5><%= item.quantity %></h5></td>
+        <td data-hook="order_item_total" style="vertical-align:middle;text-align:center;"><h5><%= money(item.price * item.quantity) %></h5></td>
       </tr>
     <% end %>
   </tbody>
   <tfoot id="order-total" data-hook="order_details_total">
     <tr class="total">
-      <td colspan="4"><h4 style="text-align:right;"><%= t(:order_total) %>:</h4></td>
-      <td class="total"><h4 id="order_total"><%= money @order.total %></h4></td>
+      <td colspan="4"><h5 style="text-align:right;"><%= t(:order_total) %>:</h5></td>
+      <td class="total" style="vertical-align:middle;text-align:center;"><h5 id="order_total"><%= money @order.total %></h5></td>
     </tr>
   </tfoot>
   <% if order.price_adjustment_totals.present? %>
@@ -100,7 +100,7 @@
   <tfoot id="subtotal" data-hook="order_details_subtotal">
     <tr class="total" id="subtotal-row">
       <td colspan="4"><h5 style="text-align:right;"><%= t(:subtotal) %>:</h5></td>
-      <td><h5><%= money @order.item_total %></h5></td>
+      <td style="vertical-align:middle;text-align:center;"><h5><%= money @order.item_total %></h5></td>
     </tr>
   </tfoot>
   <tfoot id="order-charges" data-hook="order_details_adjustments">
@@ -108,7 +108,7 @@
     <% next if (adjustment.originator_type == 'Spree::TaxRate') and (adjustment.amount == 0) %>
       <tr class="total">
         <td colspan="4"><h5  style="text-align:right;"><%= adjustment.label %></h5></td>
-        <td><h5><%= money adjustment.amount %></h5></td>
+        <td style="vertical-align:middle;text-align:center;"><h5><%= money adjustment.amount %></h5></td>
       </tr>
     <% end %>
   </tfoot>

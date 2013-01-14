@@ -7,7 +7,7 @@
   <% @order.adjustments.eligible.each do |adjustment| %>
     <tr>
       <td colspan="4" valign="center"><%= adjustment.label %></td>
-      <td><h5><%= adjustment.display_amount %></h5></td>
+      <td style="vertical-align:middle;text-align:center;"><h5><%= adjustment.display_amount %></h5></td>
       <td></td>
     </tr>
   <% end %>
