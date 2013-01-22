@@ -45,6 +45,7 @@ group :development do
   gem 'puma'
   gem "better_errors"
   gem "binding_of_caller"
+  gem 'colorize'
 end
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
