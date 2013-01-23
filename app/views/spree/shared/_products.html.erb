@@ -14,7 +14,13 @@
         <div class="row">
           <%= form_for :order, :url => populate_orders_url do |f| %>
           <div class="span1">
-            <%= link_to small_image(product, :itemprop => "image"), product, :itemprop => 'url' %>
+            <% if product.show_in_offert == true %>
+              <%= link_to offertmark_image(product, :itemprop => "image"), product, :itemprop => 'url' %>
+            <% elsif product.created_at > (Date.today - 4.day) %>
+              <%= link_to newmark_image(product, :itemprop => "image"), product, :itemprop => 'url' %>
+            <% else %>
+              <%= link_to small_image(product, :itemprop => "image"), product, :itemprop => 'url' %>  
+            <% end %>
           </div>
           <div class="span1">
             <h6><%= product.taxons.last.name %></h6>
@@ -35,13 +41,13 @@
                   </div>
                   <div class="span1">
                     <% unless product.is_moto? %>
-                      <%#= link_to "#", "data-original-title" => "#{product.name}", "data-content" => "#{eco_image(product)}", :id => "example" do %>
+                      <%= link_to "#", "data-original-title" => "#{product.name}", "data-content" => "#{ceelabel_image(product)}", :id => "example" do %>
                         <%= image_tag "etiqueta.png" %>
                         <%= product.master.tire_fuel_consumption.name %>
                         <%= product.master.tire_wet_grip.name %>
                         <%= product.master.tire_rolling_noise_wave %>
                         <%= product.master.tire_rolling_noise_db %>
-                      <%# end %>
+                      <% end %>
                     <% end -%>
                   </div>
                 </div>
