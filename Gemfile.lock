@@ -38,7 +38,7 @@ GIT
 
 GIT
   remote: git://github.com/jgamsan/spree_load_tires_for_rodaben.git
-  revision: 4ff578c268dc61acfa0022d9d11cee989759cfa3
+  revision: 702c1e86110a6036f1f3c1f7f0fb80510c76dc61
   specs:
     spree_load_tires_for_rodaben (1.1.2)
       mechanize
@@ -182,6 +182,7 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.4.0)
+    colorize (0.5.8)
     css_parser (1.2.6)
       addressable
       rdoc
@@ -468,6 +469,7 @@ DEPENDENCIES
   capistrano
   capistrano-unicorn
   coffee-rails
+  colorize
   devise-i18n
   foreman
   haml
