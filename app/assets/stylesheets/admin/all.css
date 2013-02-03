@@ -6,12 +6,12 @@
 
  *= require admin/spree_core
  *= require admin/spree_promo
-
- *= require_self
- *= require_tree .
  *= require admin/spree_workshop
  *= require admin/spree_addings_for_rodaben
  *= require admin/spree_news
+ *= require_self
+ *= require_tree .
+
 */
 .pagination {
   margin: 20px 0;

@@ -6,14 +6,10 @@
 //
 //= require jquery
 //= require jquery_ujs
-
 //= require admin/spree_core
 //= require admin/spree_promo
-
 //= require_tree .
-//= require admin/spree_workshop
-//= require admin/spree_addings_for_rodaben
-//= require admin/spree_news
+
 
 $(function () {
     $('input#check_all').live("change", function() {
