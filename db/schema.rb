@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130106184113) do
+ActiveRecord::Schema.define(:version => 20130203232234) do
 
   create_table "spree_activators", :force => true do |t|
     t.string   "description"
@@ -257,6 +257,7 @@ ActiveRecord::Schema.define(:version => 20130106184113) do
     t.datetime "created_at",                             :null => false
     t.datetime "updated_at",                             :null => false
     t.datetime "deleted_at"
+    t.string   "display_on"
   end
 
   create_table "spree_payments", :force => true do |t|
@@ -270,6 +271,7 @@ ActiveRecord::Schema.define(:version => 20130106184113) do
     t.string   "state"
     t.string   "response_code"
     t.string   "avs_response"
+    t.string   "identifier"
   end
 
   create_table "spree_paypal_accounts", :force => true do |t|
@@ -323,8 +325,9 @@ ActiveRecord::Schema.define(:version => 20130106184113) do
     t.string   "value"
     t.integer  "product_id"
     t.integer  "property_id"
-    t.datetime "created_at",  :null => false
-    t.datetime "updated_at",  :null => false
+    t.datetime "created_at",                 :null => false
+    t.datetime "updated_at",                 :null => false
+    t.integer  "position",    :default => 0
   end
 
   add_index "spree_product_properties", ["product_id"], :name => "index_product_properties_on_product_id"

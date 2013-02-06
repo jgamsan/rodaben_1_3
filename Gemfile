@@ -10,7 +10,6 @@ gem 'pg'
 group :production do
   gem 'unicorn'
   gem 'foreman'
-  gem 'therubyracer', '0.10.2' #only required for 0.70.x or later
 end
 # Gems used only for assets and not required
 # in production environments by default.
