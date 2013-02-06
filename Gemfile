@@ -10,6 +10,7 @@ gem 'pg'
 group :production do
   gem 'unicorn'
   gem 'foreman'
+  gem 'execjs'
 end
 # Gems used only for assets and not required
 # in production environments by default.
