@@ -473,7 +473,6 @@ DEPENDENCIES
   coffee-rails
   colorize
   devise-i18n
-  execjs
   foreman
   haml
   haml-rails
