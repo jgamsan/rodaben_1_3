@@ -1,5 +1,5 @@
-set :rvm_ruby_string, ENV['GEM_HOME'].gsub(/.*\//,"")
 require "bundler/capistrano"
+set :rvm_ruby_string, ENV['GEM_HOME'].gsub(/.*\//,"")
 set :application, "neumaticos"
 set :domain, "mail.galiclick.com"
 set :user, "galiclick"
