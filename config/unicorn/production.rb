@@ -1,3 +1,4 @@
+
 wd = "/home/galiclick/public_html/neumaticos/current"
 working_directory wd
 pid "#{wd}/tmp/pids/unicorn.pid"
@@ -6,7 +7,7 @@ stdout_path "#{wd}/log/unicorn.log"
 preload_app true
 listen "#{wd}/tmp/unicorn.todo.sock"
 worker_processes 2
-timeout 30
+timeout 240
 before_fork do |server, worker|
   ActiveRecord::Base.connection.disconnect!
 
