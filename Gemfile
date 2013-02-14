@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.11'
+gem 'rails', '3.2.12'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -64,9 +64,9 @@ end
 gem 'spree', '1.3.2'
 gem 'spree_usa_epay'
 gem 'spree_skrill'
-gem 'spree_auth_devise', :git => 'git://github.com/spree/spree_auth_devise', :branch => 'edge'
+gem 'spree_auth_devise', :git => 'git://github.com/spree/spree_auth_devise', :branch => 'edge', :ref => 'ba356f4c71'
 gem 'spree_i18n', :git => 'git://github.com/jgamsan/spree_i18n.git'
-gem "spree_paypal_express", :git => "git://github.com/spree/spree_paypal_express.git"
+gem "spree_paypal_express", :git => "git://github.com/spree/spree_paypal_express.git", :branch => '1-3-stable'
 gem "spree_addings_for_rodaben", :git => "git://github.com/jgamsan/spree_addings_for_rodaben.git", :branch => 'stable-1-3'
 gem "spree_load_tires_for_rodaben", :git => "git://github.com/jgamsan/spree_load_tires_for_rodaben.git"
 gem "spree_search_rodaben", :git => "git://github.com/jgamsan/spree_search_rodaben.git", :branch => 'stable-1-3'
