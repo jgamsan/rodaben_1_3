@@ -1,10 +1,12 @@
+require "bundler/capistrano"
+set :rvm_ruby_string, ENV['GEM_HOME'].gsub(/.*\//,"")
 set :application, "neumaticos"
 set :domain, "mail.galiclick.com"
 set :user, "galiclick"
 set :repository, "git@github.com:jgamsan/rodaben_1_3.git"
 set :scm, :git
 set :keep_releases, 2
-set :rvm_ruby_string, ENV['GEM_HOME'].gsub(/.*\//,"")
+
 default_run_options[:pty] = true
 ssh_options[:forward_agent] = true
 set :use_sudo, false
@@ -35,5 +37,4 @@ after "deploy", "deploy:cleanup"
 set :whenever_command, "bundle exec whenever"
 require "whenever/capistrano"
 require "rvm/capistrano"
-require "bundler/capistrano"
 require 'capistrano-unicorn'
