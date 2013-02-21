@@ -11,7 +11,7 @@ default_run_options[:pty] = true
 ssh_options[:forward_agent] = true
 set :use_sudo, false
 set :deploy_via, :remote_cache
-set :deploy_to, "/home/galiclick/public_html/#{application}"
+set :deploy_to, "/media/disco_b/public_html/#{application}"
 set :rails_env, "production"
 
 task :demo do

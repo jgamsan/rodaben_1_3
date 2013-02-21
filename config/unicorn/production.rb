@@ -1,5 +1,5 @@
 
-wd = "/home/galiclick/public_html/neumaticos/current"
+wd = "/media/disco_b/public_html/neumaticos/current"
 working_directory wd
 pid "#{wd}/tmp/pids/unicorn.pid"
 stderr_path "#{wd}/log/unicorn.log"
