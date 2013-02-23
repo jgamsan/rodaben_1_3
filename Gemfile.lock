@@ -38,7 +38,7 @@ GIT
 
 GIT
   remote: git://github.com/jgamsan/spree_load_tires_for_rodaben.git
-  revision: c91e4fa94a1470fac13f684075679b6a6b9d02bf
+  revision: 4118097b34dae698cad8de9b79ce88a186837642
   specs:
     spree_load_tires_for_rodaben (1.1.2)
       mechanize
@@ -361,7 +361,7 @@ GEM
       sprockets
     rvm-capistrano (1.2.7)
       capistrano (>= 2.0.0)
-    sass (3.2.5)
+    sass (3.2.6)
     sass-rails (3.2.6)
       railties (~> 3.2.0)
       sass (>= 3.1.10)
