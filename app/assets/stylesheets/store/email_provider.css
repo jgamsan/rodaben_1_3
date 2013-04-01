@@ -46,10 +46,7 @@ h1, .h1{
     /*@editable*/ font-size:40px;
     /*@editable*/ font-weight:bold;
     /*@editable*/ line-height:100%;
-    margin-top:2%;
-    margin-right:0;
-    margin-bottom:1%;
-    margin-left:0;
+  margin: 2% 0 1% 0;
     /*@editable*/ text-align:left;
 }
 
@@ -66,10 +63,7 @@ h2, .h2{
     /*@editable*/ font-size:18px;
     /*@editable*/ font-weight:bold;
     /*@editable*/ line-height:100%;
-    margin-top:2%;
-    margin-right:0;
-    margin-bottom:1%;
-    margin-left:0;
+  margin: 2% 0 1% 0;
     /*@editable*/ text-align:left;
 }
 
@@ -86,10 +80,7 @@ h3, .h3{
     /*@editable*/ font-size:16px;
     /*@editable*/ font-weight:bold;
     /*@editable*/ line-height:100%;
-    margin-top:2%;
-    margin-right:0;
-    margin-bottom:1%;
-    margin-left:0;
+  margin: 2% 0 1% 0;
     /*@editable*/ text-align:left;
 }
 
@@ -106,10 +97,7 @@ h4, .h4{
     /*@editable*/ font-size:14px;
     /*@editable*/ font-weight:bold;
     /*@editable*/ line-height:100%;
-    margin-top:2%;
-    margin-right:0;
-    margin-bottom:1%;
-    margin-left:0;
+  margin: 2% 0 1% 0;
     /*@editable*/ text-align:left;
 }
 
