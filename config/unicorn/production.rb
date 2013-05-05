@@ -1,4 +1,3 @@
-
 wd = "/media/disco_b/public_html/neumaticos/current"
 working_directory wd
 pid "#{wd}/tmp/pids/unicorn.pid"
