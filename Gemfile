@@ -32,6 +32,7 @@ gem 'mini_magick'
 gem 'newrelic_rpm'
 gem 'angular-rails'
 gem 'ransack', '0.7.2'
+gem 'wardem', '1.2.1'
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 gem 'devise-i18n'
