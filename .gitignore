@@ -15,6 +15,5 @@
 /log/*.log.*
 /tmp
 .idea/
-.redcar/
 public/spree
 vendor/products
