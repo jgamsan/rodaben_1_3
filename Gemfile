@@ -37,7 +37,7 @@ gem 'warden', '1.2.1'
 # gem 'bcrypt-ruby', '~> 3.0.0'
 gem 'devise-i18n'
 gem 'mechanize'
-gem 'whenever', '~> 0.7.3', :require => false
+gem 'whenever', :require => false
 group :development do
   gem 'capistrano'
   gem 'capistrano-unicorn', :require => false

@@ -543,4 +543,4 @@ DEPENDENCIES
   uglifier (>= 1.0.3)
   unicorn
   warden (= 1.2.1)
-  whenever (~> 0.7.3)
+  whenever
