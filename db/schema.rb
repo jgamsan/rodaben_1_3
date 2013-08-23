@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130328195253) do
+ActiveRecord::Schema.define(:version => 20130822211830) do
 
   create_table "spree_activators", :force => true do |t|
     t.string   "description"
@@ -723,6 +723,10 @@ ActiveRecord::Schema.define(:version => 20130328195253) do
   end
 
   add_index "spree_variants", ["product_id"], :name => "index_spree_variants_on_product_id"
+  add_index "spree_variants", ["tire_innertube_id"], :name => "index_spree_variants_on_tire_innertube_id"
+  add_index "spree_variants", ["tire_serial_id"], :name => "index_spree_variants_on_tire_serial_id"
+  add_index "spree_variants", ["tire_speed_code_id"], :name => "index_spree_variants_on_tire_speed_code_id"
+  add_index "spree_variants", ["tire_width_id"], :name => "index_spree_variants_on_tire_width_id"
 
   create_table "spree_workshops", :force => true do |t|
     t.string   "name"
