@@ -38,7 +38,7 @@ GIT
 
 GIT
   remote: git://github.com/jgamsan/spree_load_tires_for_rodaben.git
-  revision: 5580f38ca6655e8a2408049bd89b4c21bf94eb86
+  revision: 5b3f575b67662f8cdc59165304a25d69387ad0cf
   specs:
     spree_load_tires_for_rodaben (1.1.2)
       mechanize
